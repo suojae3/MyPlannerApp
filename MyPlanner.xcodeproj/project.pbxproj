@@ -72,6 +72,7 @@
 		0815CB3B2A9498D9006144AD /* MyPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				0815CB712A94EC61006144AD /* New Group */,
 				0815CB502A9498F5006144AD /* Application */,
 				0815CB512A94990A006144AD /* Presentation */,
 				0815CB532A949921006144AD /* Data */,
@@ -145,6 +146,13 @@
 				0815CB6D2A94D432006144AD /* BasePlannerVIewModel.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		0815CB712A94EC61006144AD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
