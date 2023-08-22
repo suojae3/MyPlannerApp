@@ -18,6 +18,7 @@
 		0815CB602A949C03006144AD /* MonthlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB5F2A949C03006144AD /* MonthlyViewModel.swift */; };
 		0815CB622A949C8B006144AD /* WeeklyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB612A949C8B006144AD /* WeeklyViewModel.swift */; };
 		0815CB642A949CCF006144AD /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB632A949CCF006144AD /* DailyViewModel.swift */; };
+		0815CB662A94B8B0006144AD /* UIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB652A94B8B0006144AD /* UIModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0815CB5F2A949C03006144AD /* MonthlyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyViewModel.swift; sourceTree = "<group>"; };
 		0815CB612A949C8B006144AD /* WeeklyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewModel.swift; sourceTree = "<group>"; };
 		0815CB632A949CCF006144AD /* DailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewModel.swift; sourceTree = "<group>"; };
+		0815CB652A94B8B0006144AD /* UIModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		0815CB512A94990A006144AD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0815CB652A94B8B0006144AD /* UIModule.swift */,
 				0815CB5B2A949AD7006144AD /* MainTabBarController.swift */,
 				0815CB542A949938006144AD /* Monthly */,
 				0815CB552A94993F006144AD /* Weekly */,
@@ -216,6 +219,7 @@
 				0815CB642A949CCF006144AD /* DailyViewModel.swift in Sources */,
 				0815CB582A9499C9006144AD /* DailyView.swift in Sources */,
 				0815CB622A949C8B006144AD /* WeeklyViewModel.swift in Sources */,
+				0815CB662A94B8B0006144AD /* UIModule.swift in Sources */,
 				0815CB3F2A9498D9006144AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
