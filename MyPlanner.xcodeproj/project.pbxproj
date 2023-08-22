@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0815CB3D2A9498D9006144AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB3C2A9498D9006144AD /* AppDelegate.swift */; };
 		0815CB3F2A9498D9006144AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB3E2A9498D9006144AD /* SceneDelegate.swift */; };
-		0815CB412A9498D9006144AD /* MonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB402A9498D9006144AD /* MonthlyViewController.swift */; };
+		0815CB412A9498D9006144AD /* MonthlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB402A9498D9006144AD /* MonthlyView.swift */; };
 		0815CB462A9498DD006144AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0815CB452A9498DD006144AD /* Assets.xcassets */; };
-		0815CB582A9499C9006144AD /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB572A9499C9006144AD /* DailyViewController.swift */; };
-		0815CB5A2A9499DB006144AD /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB592A9499DB006144AD /* WeeklyViewController.swift */; };
+		0815CB582A9499C9006144AD /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB572A9499C9006144AD /* DailyView.swift */; };
+		0815CB5A2A9499DB006144AD /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB592A9499DB006144AD /* WeeklyView.swift */; };
 		0815CB5C2A949AD7006144AD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB5B2A949AD7006144AD /* MainTabBarController.swift */; };
 		0815CB5E2A949B08006144AD /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB5D2A949B08006144AD /* DataSource.swift */; };
 		0815CB602A949C03006144AD /* MonthlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB5F2A949C03006144AD /* MonthlyViewModel.swift */; };
@@ -24,11 +24,11 @@
 		0815CB392A9498D9006144AD /* MyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0815CB3C2A9498D9006144AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0815CB3E2A9498D9006144AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0815CB402A9498D9006144AD /* MonthlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyViewController.swift; sourceTree = "<group>"; };
+		0815CB402A9498D9006144AD /* MonthlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyView.swift; sourceTree = "<group>"; };
 		0815CB452A9498DD006144AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0815CB4A2A9498DD006144AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0815CB572A9499C9006144AD /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
-		0815CB592A9499DB006144AD /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
+		0815CB572A9499C9006144AD /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		0815CB592A9499DB006144AD /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 		0815CB5B2A949AD7006144AD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0815CB5D2A949B08006144AD /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		0815CB5F2A949C03006144AD /* MonthlyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyViewModel.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		0815CB542A949938006144AD /* Monthly */ = {
 			isa = PBXGroup;
 			children = (
-				0815CB402A9498D9006144AD /* MonthlyViewController.swift */,
+				0815CB402A9498D9006144AD /* MonthlyView.swift */,
 				0815CB5F2A949C03006144AD /* MonthlyViewModel.swift */,
 			);
 			path = Monthly;
@@ -123,7 +123,7 @@
 		0815CB552A94993F006144AD /* Weekly */ = {
 			isa = PBXGroup;
 			children = (
-				0815CB592A9499DB006144AD /* WeeklyViewController.swift */,
+				0815CB592A9499DB006144AD /* WeeklyView.swift */,
 				0815CB612A949C8B006144AD /* WeeklyViewModel.swift */,
 			);
 			path = Weekly;
@@ -132,7 +132,7 @@
 		0815CB562A949945006144AD /* Daily */ = {
 			isa = PBXGroup;
 			children = (
-				0815CB572A9499C9006144AD /* DailyViewController.swift */,
+				0815CB572A9499C9006144AD /* DailyView.swift */,
 				0815CB632A949CCF006144AD /* DailyViewModel.swift */,
 			);
 			path = Daily;
@@ -209,12 +209,12 @@
 			files = (
 				0815CB602A949C03006144AD /* MonthlyViewModel.swift in Sources */,
 				0815CB5E2A949B08006144AD /* DataSource.swift in Sources */,
-				0815CB412A9498D9006144AD /* MonthlyViewController.swift in Sources */,
+				0815CB412A9498D9006144AD /* MonthlyView.swift in Sources */,
 				0815CB3D2A9498D9006144AD /* AppDelegate.swift in Sources */,
 				0815CB5C2A949AD7006144AD /* MainTabBarController.swift in Sources */,
-				0815CB5A2A9499DB006144AD /* WeeklyViewController.swift in Sources */,
+				0815CB5A2A9499DB006144AD /* WeeklyView.swift in Sources */,
 				0815CB642A949CCF006144AD /* DailyViewModel.swift in Sources */,
-				0815CB582A9499C9006144AD /* DailyViewController.swift in Sources */,
+				0815CB582A9499C9006144AD /* DailyView.swift in Sources */,
 				0815CB622A949C8B006144AD /* WeeklyViewModel.swift in Sources */,
 				0815CB3F2A9498D9006144AD /* SceneDelegate.swift in Sources */,
 			);

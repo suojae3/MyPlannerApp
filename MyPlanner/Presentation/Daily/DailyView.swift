@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DailyViewController: UIViewController {
+class DailyView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
