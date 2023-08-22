@@ -16,17 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        // Initialize the main window
-        window = UIWindow(windowScene: windowScene)
-        
-        // Create an instance of the MainTabBarController
-        let mainTabBarController = MainTabBarController()
-        
-        // Set the MainTabBarController as the root view controller
-        window?.rootViewController = mainTabBarController
-        
-        // Present the window to the screen
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = MainTabBarController() // 시작 VC 작성해주기
+        window.makeKeyAndVisible()
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
