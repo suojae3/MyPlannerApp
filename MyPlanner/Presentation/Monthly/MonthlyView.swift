@@ -9,32 +9,36 @@ import UIKit
 
 class MonthlyView: UIViewController {
 
-    var viewModel = MonthlyViewModel()
-    private let uiModule = UIModule()
-        
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        viewModel = MonthlyViewModel()
-        addView()
-        setupConstraints()
+    private let uiModule = UIModule()
+    var viewModel: MonthlyViewModel
 
+    
+    init(useCaseProvider: UseCaseProvider) {
+        self.viewModel = MonthlyViewModel(useCases: useCaseProvider.makeUseCase())
+        super.init(nibName: nil, bundle: nil)
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+        
     func addView() {
         view.addSubview(uiModule.profileView)
         view.addSubview(uiModule.searchBar)
         view.addSubview(uiModule.calendarView)
         view.addSubview(uiModule.tasksTableView)
         view.addSubview(uiModule.floatingButton)
-        uiModule.floatingButton.addTarget(self, action: #selector(handleAddTask), for: .touchUpInside)
+        uiModule.floatingButton.addTarget(self, action: #selector(didTapAddTask), for: .touchUpInside)
+        
+    }
+}
 
-    }
-    
-    @objc func handleAddTask() {
-        print("플로팅버튼 테스트")
-    }
+
+
+// UI Constraints
+extension MonthlyView {
     
     func setupConstraints() {
         
@@ -87,5 +91,19 @@ class MonthlyView: UIViewController {
 }
 
 
+// 생명주기
+extension MonthlyView {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        addView()
+        setupConstraints()
+    }
+}
 
-
+// 버튼 액션 함수
+extension MonthlyView {
+    @objc func didTapAddTask() {
+        print("test")
+    }
+}

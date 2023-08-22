@@ -7,7 +7,7 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let monthlyVC = MonthlyView()
+        let monthlyVC = MonthlyView(useCaseProvider: DefaultUseCaseProvider())
         monthlyVC.tabBarItem = UITabBarItem(title: "Scene 1", image: nil,  tag: 0)
         
         let weeklyVC = WeeklyView()

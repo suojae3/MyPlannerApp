@@ -19,6 +19,8 @@
 		0815CB622A949C8B006144AD /* WeeklyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB612A949C8B006144AD /* WeeklyViewModel.swift */; };
 		0815CB642A949CCF006144AD /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB632A949CCF006144AD /* DailyViewModel.swift */; };
 		0815CB662A94B8B0006144AD /* UIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB652A94B8B0006144AD /* UIModule.swift */; };
+		0815CB682A94CDD3006144AD /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB672A94CDD3006144AD /* Task.swift */; };
+		0815CB6E2A94D432006144AD /* BasePlannerVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815CB6D2A94D432006144AD /* BasePlannerVIewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		0815CB612A949C8B006144AD /* WeeklyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewModel.swift; sourceTree = "<group>"; };
 		0815CB632A949CCF006144AD /* DailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewModel.swift; sourceTree = "<group>"; };
 		0815CB652A94B8B0006144AD /* UIModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModule.swift; sourceTree = "<group>"; };
+		0815CB672A94CDD3006144AD /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0815CB6D2A94D432006144AD /* BasePlannerVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasePlannerVIewModel.swift; path = MyPlanner/Presentation/BasePlannerVIewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,6 @@
 			children = (
 				0815CB502A9498F5006144AD /* Application */,
 				0815CB512A94990A006144AD /* Presentation */,
-				0815CB522A949916006144AD /* Domain */,
 				0815CB532A949921006144AD /* Data */,
 			);
 			path = MyPlanner;
@@ -90,8 +93,8 @@
 		0815CB512A94990A006144AD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				0815CB652A94B8B0006144AD /* UIModule.swift */,
 				0815CB5B2A949AD7006144AD /* MainTabBarController.swift */,
+				0815CB6C2A94D3F8006144AD /* Shared */,
 				0815CB542A949938006144AD /* Monthly */,
 				0815CB552A94993F006144AD /* Weekly */,
 				0815CB562A949945006144AD /* Daily */,
@@ -99,17 +102,11 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		0815CB522A949916006144AD /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		0815CB532A949921006144AD /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				0815CB5D2A949B08006144AD /* DataSource.swift */,
+				0815CB672A94CDD3006144AD /* Task.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -139,6 +136,15 @@
 				0815CB632A949CCF006144AD /* DailyViewModel.swift */,
 			);
 			path = Daily;
+			sourceTree = "<group>";
+		};
+		0815CB6C2A94D3F8006144AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0815CB652A94B8B0006144AD /* UIModule.swift */,
+				0815CB6D2A94D432006144AD /* BasePlannerVIewModel.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0815CB602A949C03006144AD /* MonthlyViewModel.swift in Sources */,
+				0815CB682A94CDD3006144AD /* Task.swift in Sources */,
 				0815CB5E2A949B08006144AD /* DataSource.swift in Sources */,
 				0815CB412A9498D9006144AD /* MonthlyView.swift in Sources */,
 				0815CB3D2A9498D9006144AD /* AppDelegate.swift in Sources */,
@@ -218,6 +225,7 @@
 				0815CB5A2A9499DB006144AD /* WeeklyView.swift in Sources */,
 				0815CB642A949CCF006144AD /* DailyViewModel.swift in Sources */,
 				0815CB582A9499C9006144AD /* DailyView.swift in Sources */,
+				0815CB6E2A94D432006144AD /* BasePlannerVIewModel.swift in Sources */,
 				0815CB622A949C8B006144AD /* WeeklyViewModel.swift in Sources */,
 				0815CB662A94B8B0006144AD /* UIModule.swift in Sources */,
 				0815CB3F2A9498D9006144AD /* SceneDelegate.swift in Sources */,
