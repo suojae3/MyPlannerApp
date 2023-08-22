@@ -9,11 +9,9 @@ import UIKit
 
 class MonthlyView: UIViewController {
 
-    
     private let uiModule = UIModule()
-    var viewModel: MonthlyViewModel
+    private let viewModel: MonthlyViewModel
 
-    
     init(useCaseProvider: UseCaseProvider) {
         self.viewModel = MonthlyViewModel(useCases: useCaseProvider.makeUseCase())
         super.init(nibName: nil, bundle: nil)
@@ -22,8 +20,31 @@ class MonthlyView: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+//MARK: ViewModel 연결
+extension MonthlyView {
     
-        
+    // 플로팅 버튼
+    @objc func didTapAddTask() {
+        viewModel.baseVM.handleAddTask()
+    }
+}
+
+
+//MARK: LifeCycle
+extension MonthlyView {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        addView()
+        setupConstraints()
+    }
+}
+
+
+//MARK: AddView
+extension MonthlyView {
     func addView() {
         view.addSubview(uiModule.profileView)
         view.addSubview(uiModule.searchBar)
@@ -31,13 +52,10 @@ class MonthlyView: UIViewController {
         view.addSubview(uiModule.tasksTableView)
         view.addSubview(uiModule.floatingButton)
         uiModule.floatingButton.addTarget(self, action: #selector(didTapAddTask), for: .touchUpInside)
-        
     }
 }
 
-
-
-// UI Constraints
+//MARK:  UI Constraints
 extension MonthlyView {
     
     func setupConstraints() {
@@ -91,19 +109,6 @@ extension MonthlyView {
 }
 
 
-// 생명주기
-extension MonthlyView {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        addView()
-        setupConstraints()
-    }
-}
 
-// 버튼 액션 함수
-extension MonthlyView {
-    @objc func didTapAddTask() {
-        print("test")
-    }
-}
+
+

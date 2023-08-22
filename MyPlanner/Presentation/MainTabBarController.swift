@@ -17,5 +17,6 @@ class MainTabBarController: UITabBarController {
         dailyVC.tabBarItem = UITabBarItem(title: "Scene 3", image: nil, tag: 2)
         
         self.viewControllers = [monthlyVC, weeklyVC, dailyVC]
+        
     }
 }
